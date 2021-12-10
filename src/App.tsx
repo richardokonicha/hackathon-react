@@ -1,9 +1,10 @@
-import { Container } from "@mui/material";
+import { Container, Stack, Typography } from "@mui/material";
 import React from "react";
 import "./App.css";
 import { GitHubList } from "./components/GithubList";
 import { MasterDetail, Item, Detail } from "./components/MasterDetail";
 import { transformValue } from "./Question3/jsQuestion";
+import { Box } from "@mui/material"
 
 const question3Logging = () => {
   const initialObject = {
@@ -16,11 +17,47 @@ const question3Logging = () => {
     "Note: Bad habit to console log to Browser Window, should be removed in production"
   );
   console.log(JSON.stringify(transformedObject));
+  return (
+    <Stack direction={"row"} spacing={2}>
+      <Box sx={{
+        flexGrow: 1,
+        "& pre": {
+          boxShadow: 1,
+          borderRadius: 2,
+          padding: 2,
+          backgroundColor: "#1976d2",
+          borderColor: 'white'
+        }
+      }}>
+        <pre>
+          <Typography>Input</Typography>
+
+          <code>{JSON.stringify(initialObject, null, 4)}</code>
+        </pre>
+      </Box>
+      <Box sx={{
+        flexGrow: 1,
+        "& pre": {
+          boxShadow: 1,
+          borderRadius: 2,
+          padding: 2,
+          backgroundColor: "#1976d2",
+          borderColor: 'white'
+
+        }
+      }}>
+        <pre >
+          <Typography>Output</Typography>
+          <code>{JSON.stringify(transformedObject, null, 4)}</code>
+        </pre>
+      </Box>
+    </Stack >
+  )
 };
 
 const App = () => (
   <Container maxWidth="lg">
-    {/* <h1>Welcome to the Frontend Hackathon</h1>
+    <h1>Welcome to the Frontend Hackathon</h1>
     Hint: If you are not able to solve some parts of the task please skip this
     part and continue on. We ♥ Typescript.
     <h2>Task 1 - React</h2>
@@ -42,7 +79,7 @@ const App = () => (
   </MasterDetail>
     `}
       </code>
-    </pre> */}
+    </pre>
 
     <MasterDetail>
       <Item payload={{ content: "Hello Peers" }}>Intro</Item>
@@ -125,9 +162,9 @@ const App = () => (
 `}</code>
     </pre>
     {question3Logging()}
-    {/* The components you develop during the hackathon should be rendered inside
+    The components you develop during the hackathon should be rendered inside
     this {`<App />`} component.
-    <h2>Best of Luck 🚀</h2> */}
+    <h2>Best of Luck 🚀</h2>
   </Container>
 );
 
