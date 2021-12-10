@@ -1,0 +1,35 @@
+/* sample css, use what ever solution you like for styling */
+
+body {
+  background: #1b1b1b;
+  color: #fff;
+  font-family: "DM Mono", monospace;
+  /* width: 1000px; */
+  margin: auto;
+  font-weight: 300;
+}
+
+h1 {
+  color: #cb01ff;
+}
+
+h2 {
+  font-weight: bold;
+  color: #cb01ff;
+}
+
+a {
+  color: #cb01ff;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 22px;
+  border-left: 2px solid darksalmon;
+  background: #291d18;
+}
+
+p {
+  line-height: 22px;
+}

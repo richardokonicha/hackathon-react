@@ -1,0 +1,47 @@
+{
+  "name": "interview-react-frontend-01",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.5.6",
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.1",
+    "@mui/material": "^5.2.3",
+    "apollo-boost": "^0.4.9",
+    "graphql": "^16.1.0",
+    "react": "^17.0.2",
+    "react-apollo": "^3.1.4",
+    "react-apollo-hooks": "^0.5.0",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.15.1",
+    "@types/jest": "^27.0.3",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/styled-components": "^5.1.16",
+    "eslint-plugin-autofix": "^1.1.0",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.2.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
