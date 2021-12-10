@@ -110,15 +110,12 @@ export const GitHubList: React.FC = () => {
               }}
               onInputChange={(_event, newInputSearchValue) => {
                 setSearchInputValue(newInputSearchValue);
-                console.log(newInputSearchValue)
               }}
             />
           </Toolbar>
           {loading && <LinearProgress />}
         </AppBar>
-
         {error && <p>Error :( Please try again</p>}
-
         <Grid container
           spacing={2}
           sx={{
@@ -135,18 +132,19 @@ export const GitHubList: React.FC = () => {
               {
                 data?.repositoryOwner?.repositories.edges.map(({ node }: { node: RepoProps }) => (
                   <Chip
-                    onClick={(_e) => handleClick(node)}
+                    onClick={() => handleClick(node)}
                     key={node.name}
                     label={node.name}
-                    variant="outlined"
+                    variant={"outlined"}
                     sx={{
                       margin: 0.4,
                       '&:hover': {
-                        backgroundColor: 'primary.main',
-                        color: 'white',
+                        backgroundColor: 'blue',
+                        color: 'blue',
                         opacity: [0.9, 0.8, 0.7],
                       },
-                    }} />
+                    }}
+                  />
                 ))
               }
             </Box>
