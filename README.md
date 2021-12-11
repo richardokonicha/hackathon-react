@@ -38,3 +38,5 @@ Find the tasks in `src/App.tsx`
 ![alt text](src/ques2.png)
 
 ![alt text](src/ques3.png)
+
+Solution is live hosted on vercel at https://hackathon-react.vercel.app/
