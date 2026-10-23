@@ -27,7 +27,7 @@
     "typescript": "^4.2.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node api.js && react-scripts start",
     "test": "react-scripts test"
   },
   "eslintConfig": {
